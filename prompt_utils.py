@@ -25,7 +25,6 @@ def stance_analysis():
     4. Return ONLY valid JSON matching the schema below. No explanation outside the JSON
 
     """
-    ...
 
 def aspect_emotion_analysis():
 
@@ -46,4 +45,3 @@ def aspect_emotion_analysis():
     5. Return ONLY valid JSON matching the schema below. No explanation outside the JSON (TODO: Change to XML format).
 
     """
-    ...
