@@ -16,6 +16,9 @@ for csv_file in folder.iterdir():
     # Add the original filename
     new_csv_df['original_file'] = filename
 
+    # Drop empty rows
+    new_csv_df = new_csv_df.dropna(subset=["post_comment"])
+
     # Add the row ID
     new_csv_df['row_id'] = [
         f"{filename}_{i}"
