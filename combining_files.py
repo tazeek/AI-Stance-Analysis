@@ -26,4 +26,9 @@ for csv_file in folder.iterdir():
     all_rows.extend(new_csv_df.to_dict(orient="records"))
 
 # Save the JSON file
-print(all_rows)
+print(f"Size: {len(all_rows)} comments")
+
+output_file = Path("all_comments.json")
+
+with open(output_file, "w", encoding="utf-8") as f:
+    json.dump(all_rows, f, ensure_ascii=False, indent=2)
